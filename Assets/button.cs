@@ -13,7 +13,7 @@ public class button : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 	public void clicked(){
 		Debug.Log ("click");
@@ -23,5 +23,13 @@ public class button : MonoBehaviour {
 			batsu.SetActive (true);
 
 		}
+		GameObject.Find ("questionmake").GetComponent<question> ().stopQuestion ();
+		Invoke ("next",1.0f);
 	}
+	void next(){
+		Debug.Log ("hoge");
+		GameObject.Find ("questionmake").GetComponent<question> ().makeQuestion();
+
+	}
+
 }

@@ -498,7 +498,7 @@ GameObject:
   - component: {fileID: 706654518}
   - component: {fileID: 706654520}
   - component: {fileID: 706654519}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: texttokyo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -584,9 +584,10 @@ GameObject:
   - component: {fileID: 817385388}
   - component: {fileID: 817385387}
   - component: {fileID: 817385386}
-  m_Layer: 0
+  - component: {fileID: 817385390}
+  m_Layer: 8
   m_Name: goodnight
-  m_TagString: Untagged
+  m_TagString: button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -658,6 +659,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &817385390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 817385385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51191cd5fc2e24cfc96e06f67484d38d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisAnswer: 1
+  maru: {fileID: 948758464}
+  batsu: {fileID: 2087944076}
 --- !u!1 &828051336
 GameObject:
   m_ObjectHideFlags: 0
@@ -867,7 +882,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!102 &948758465
 TextMesh:
   serializedVersion: 3
@@ -1012,9 +1027,10 @@ GameObject:
   - component: {fileID: 1299345643}
   - component: {fileID: 1299345642}
   - component: {fileID: 1299345641}
-  m_Layer: 0
+  - component: {fileID: 1299345645}
+  m_Layer: 8
   m_Name: tokyo
-  m_TagString: Untagged
+  m_TagString: button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1086,6 +1102,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0.89300007, z: 0}
+--- !u!114 &1299345645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1299345640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51191cd5fc2e24cfc96e06f67484d38d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisAnswer: 0
+  maru: {fileID: 948758464}
+  batsu: {fileID: 2087944076}
 --- !u!1 &1492605156
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,6 +1156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eac84751c9fd142e0bb6ff35a77523f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  answer: 0
 --- !u!1 &1504091188
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,6 +1167,7 @@ GameObject:
   - component: {fileID: 1504091191}
   - component: {fileID: 1504091190}
   - component: {fileID: 1504091189}
+  - component: {fileID: 1504091192}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1188,6 +1220,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1504091192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1504091188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ca1cdf811afa468a93e9c8f08b179af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeTag: button
 --- !u!1 &1676290203
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,7 +1339,7 @@ GameObject:
   - component: {fileID: 1846778983}
   - component: {fileID: 1846778985}
   - component: {fileID: 1846778984}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: textgood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1467,7 +1511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!102 &2087944077
 TextMesh:
   serializedVersion: 3
